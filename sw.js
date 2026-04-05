@@ -1,10 +1,12 @@
-const CACHE_NAME = '1ife-v1';
+const CACHE_NAME = '1ife-v2';
 const ASSETS = [
   '/',
   '/index.html',
   '/404.html',
-  '/manifest.json',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
+  '/styles.css',
+  '/main.js',
+  '/fonts/inter.css',
+  '/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
