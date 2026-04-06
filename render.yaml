@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: nymeer
-    env: static
-    buildCommand: ""
-    publishPath: /
