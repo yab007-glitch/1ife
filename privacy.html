@@ -16,6 +16,10 @@
     <link rel="manifest" href="/manifest.json">
 </head>
 <body>
+    <script>
+        var theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme === 'light' ? 'light' : 'dark');
+    </script>
     <nav style="position: fixed; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 3rem; background: var(--bg); z-index: 100;">
         <a href="/" class="logo" style="text-decoration: none;">NYMEER</a>
         <a href="/" class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Back to Home</a>
@@ -28,7 +32,7 @@
         <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;">NYMEER ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website at nymeer.com.</p>
         
         <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem;">Information We Collect</h2>
-        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;">We may collect information you provide directly to us, such as when you subscribe to our newsletter or contact us through our contact form. This may include:</p>
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;">We may collect information you provide directly to us, such as when you contact us through our contact form. This may include:</p>
         <ul style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.5rem;">Name and email address</li>
             <li style="margin-bottom: 0.5rem;">Messages or inquiries you send us</li>
@@ -42,7 +46,7 @@
         <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;">We use the information we collect to:</p>
         <ul style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.5rem;">Respond to your inquiries and provide customer support</li>
-            <li style="margin-bottom: 0.5rem;">Send you newsletters and updates (you can opt out at any time)</li>
+            <li style="margin-bottom: 0.5rem;">Send you updates about our services (you can opt out at any time)</li>
             <li style="margin-bottom: 0.5rem;">Analyze website usage and improve our services</li>
             <li style="margin-bottom: 0.5rem;">Comply with legal obligations</li>
         </ul>
