@@ -1,11 +1,10 @@
-const CACHE_NAME = 'nymeer-v2';
+const CACHE_NAME = 'nymeer-v3';
 const ASSETS = [
   '/',
   '/index.html',
   '/404.html',
   '/styles.css',
   '/main.js',
-  '/fonts/inter.css',
   '/manifest.json'
 ];
 

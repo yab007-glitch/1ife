@@ -1,13 +1,6 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
-
-const theme = localStorage.getItem('theme') || 'dark';
-document.documentElement.setAttribute('data-theme', theme === 'light' ? 'light' : 'dark');
-document.querySelector('.icon-sun').style.display = theme === 'light' ? 'none' : 'block';
-document.querySelector('.icon-moon').style.display = theme === 'light' ? 'block' : 'none';
 
 const themeToggle = document.querySelector('.theme-toggle');
 themeToggle.addEventListener('click', () => {
